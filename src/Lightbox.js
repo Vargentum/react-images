@@ -8,7 +8,6 @@ import defaultStyles from './styles/default';
 import Transition from 'react-addons-transition-group';
 
 const { PropTypes } = React;
-const BODY = document.body;
 
 var Lightbox = React.createClass({
 	displayName: 'Lightbox',
@@ -64,9 +63,9 @@ var Lightbox = React.createClass({
 		}
 
 		if (nextProps.isOpen) {
-			BODY.style.overflow = 'hidden';
+			document.body.style.overflow = 'hidden';
 		} else {
-			BODY.style.overflow = null;
+			document.body.style.overflow = null;
 		}
 	},
 
