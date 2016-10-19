@@ -278,8 +278,6 @@ var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransition
 
 var PropTypes = _react2['default'].PropTypes;
 
-var BODY = document.body;
-
 var Lightbox = _react2['default'].createClass({
 	displayName: 'Lightbox',
 	propTypes: {
@@ -332,9 +330,9 @@ var Lightbox = _react2['default'].createClass({
 		}
 
 		if (nextProps.isOpen) {
-			BODY.style.overflow = 'hidden';
+			document.body.style.overflow = 'hidden';
 		} else {
-			BODY.style.overflow = null;
+			document.body.style.overflow = null;
 		}
 	},
 
